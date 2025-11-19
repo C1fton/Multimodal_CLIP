@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="CLIP" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="CLIP" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="coop_env" project-jdk-type="Python SDK" />
 </project>
