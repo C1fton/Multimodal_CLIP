@@ -3,7 +3,7 @@ ZJU Machine Learning Project--Multimodal CLIP(2025 Autumn)
 
 视觉语言微调 (Vision and Language Tuning)：基于 CoOp 的高效少样本学习
 
-## 1.任务介绍
+## 👥 1.任务介绍
 
 任务的主要目标是在下游任务上增强 **CLIP (Contrastive Language-Image Pre-training)** 模型的少样本 (Few-shot) 和零样本 (Zero-shot) 能力，并严格遵守“**尽可能少的参数 (as few parameters as possible)**”这一约束。
 
@@ -13,7 +13,7 @@ ZJU Machine Learning Project--Multimodal CLIP(2025 Autumn)
 
 ---
 
-## 2.方法与原理
+## 🧠 2.方法与原理
 
 ### 2.1 基线方法：CoOp
 标准的 Zero-shot CLIP 依赖于人工设计的提示词（Prompt），例如 *"a photo of a [CLASS]"*。
@@ -56,10 +56,10 @@ pip install git+[https://github.com/KaiyangZhou/Dassl.pytorch.git](https://githu
     └── classnames.txt # 由自定义脚本生成
 注：我们需要使用自定义脚本 fix_imagenet.py 来生成适用于该子集的 classnames.txt 映射文件。
 
-## 4.如何运行(How to Run)
+## 🚀 4.如何运行(How to Run)
 我们在 Zero-shot, 标准 CoOp (1-16 shots), 和 高效 CoOp (1-16 shots) 上进行了实验。 注意：由于 Windows CPU 环境的限制，我们将 NUM_WORKERS 设为 0 并调整了 BATCH_SIZE。
 
-### 4.1 Zero-shot CLIP (基准)
+###  4.1 Zero-shot CLIP (基准)
 运行以下命令以获取未微调的基准性能：
 
 ```Bash
